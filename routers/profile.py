@@ -153,7 +153,7 @@ async def get_log_out(request: Request) -> HTMLResponse:
     context = {
         'request': request,
         'title': 'Главная',
-        'pagename': 'Булочная',
+        'pagename': 'Булочная - Тёплый Хлеб',
         'logged': log_st.is_logged_in,
         'LinkStatus': link_st,
     }
