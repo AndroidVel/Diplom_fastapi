@@ -1,6 +1,6 @@
-from sqlalchemy.exc import IntegrityError, PendingRollbackError
+from sqlalchemy.exc import IntegrityError
 
-from fastapi import FastAPI, status, HTTPException, Request, Form
+from fastapi import FastAPI, status, HTTPException, Request
 from fastapi.params import Depends
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
@@ -12,7 +12,7 @@ from routers import profile
 from link_log_st import link_st, log_st
 from models import User, Product
 from schemas import CreateProduct
-from sqlalchemy import insert, select, update, delete
+from sqlalchemy import insert, select
 
 
 app = FastAPI()
